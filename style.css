@@ -1,0 +1,462 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset and Global Styles */
+*, ::before, ::after { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b0314; /* Deep dark purple canvas*/
+    color: #ffffff;
+    overflow-x: hidden;
+    line-height: 1.4;
+}
+
+a { 
+    text-decoration: none; 
+    display: inline-block;
+}
+
+ul { 
+    list-style: none; 
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #0b0314;
+}
+
+.logo-icon {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links a {
+    color: #a5a1aa;
+    font-size: 0.95rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    color: #ffffff;
+}
+
+/* Hero Section Layout */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 10%;
+}
+
+.hero-content {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns all text blocks neatly to the left */
+}
+
+/* Intro Block (Avatar + Right Side Text) */
+.intro-box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* Purple Glow behind Avatar */
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    font-size: 8.5rem;
+    background: radial-gradient(circle, rgba(138, 43, 226, 0.4) 0%, rgba(11, 3, 20, 0) 70%);
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting {
+    font-size: 0.9rem;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.highlight {
+    color: #a259ff;
+    font-weight: 500;
+}
+
+.tagline {
+    font-size: 0.85rem;
+    color: #a5a1aa;
+    text-decoration: underline;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.main-quote {
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+/* Oval/Circle Ring Outline around "cover" */
+.circle-text {
+    color: #a259ff;
+    border: 1px solid #573296;
+    border-radius: 50px;
+    padding: 2px 18px;
+    display: inline-block;
+}
+
+.sub-quote {
+    font-size: 0.65rem;
+    color: #615e69;
+    margin-top: 6px;
+}
+
+/* Main Central Headline */
+.job-title {
+    font-size: 3.6rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+}
+
+.company {
+    font-size: 1.1rem;
+    color: #a5a1aa;
+    margin-bottom: 55px;
+}
+
+.fb-link {
+    color: #2374e1;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Footer Narrative Paragraph */
+.description {
+    font-size: 1.05rem;
+    color: #c5c2c9;
+    line-height: 1.7;
+    max-width: 680px;
+    font-weight: 300;
+}
+
+/* ==========================================
+   Work Experience Section
+   ========================================== */
+.experience-section {
+    padding: 80px 10%;
+    background-color: #0b0314;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+/* 2x2 Grid Controller */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two Equal Columns */
+    gap: 30px; /* Space between rows and columns */
+}
+
+/* Translucent Frosted Glass Card Design */
+.exp-card {
+    background: linear-gradient(135deg, rgba(31, 15, 53, 0.4) 0%, rgba(15, 6, 29, 0.6) 100%);
+    border: 1px solid rgba(138, 43, 226, 0.15);
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.exp-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(162, 89, 255, 0.4);
+}
+
+.card-icon {
+    font-size: 3.5rem;
+    min-width: 80px;
+    text-align: center;
+}
+
+.card-info h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.card-info p {
+    font-size: 0.85rem;
+    color: #a5a1aa;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Small Button Styling */
+.learn-more-btn {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 18px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #ffffff;
+    color: #0b0314;
+}
+
+/* ==========================================
+   Skills & Center Pitch Section
+   ========================================== */
+.skills-section {
+    padding: 100px 10% 40px 10%;
+    background-color: #0b0314;
+    text-align: center; /* Center aligns text blocks */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pitch-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.purple-highlight {
+    color: #a259ff;
+    font-weight: 500;
+}
+
+/* Skills Cluster Layout */
+.tech-icons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.icon-row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.tech-tag {
+    background-color: #160d24;
+    border: 1px solid #2d1b46;
+    color: #c5c2c9;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+/* Bottom Glowing Core Orb */
+.footer-logo-glow {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.glowing-circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(162, 89, 255, 0.35) 0%, rgba(11, 3, 20, 0) 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(162, 89, 255, 0.2);
+}
+
+.central-logo {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.6);
+}
+
+/* ==========================================
+   Featured Projects Section
+   ========================================== */
+.projects-section {
+    padding: 100px 10%;
+    background-color: #0b0314;
+    display: flex;
+    flex-direction: column;
+    gap: 120px; /* Large spacing between projects */
+}
+
+.project-row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+}
+
+/* Reverses the order of text and image for the second project */
+.project-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.project-text {
+    flex: 1;
+    z-index: 2;
+}
+
+.project-tag {
+    color: #a259ff;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.project-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Frosted glass/semi-transparent floating container for description */
+.project-desc-box {
+    background: rgba(31, 15, 53, 0.6);
+    border: 1px solid rgba(138, 43, 226, 0.2);
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    color: #c5c2c9;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.3rem;
+}
+
+.project-image-container {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Simulated browser/canvas mock representation */
+.project-screenshot {
+    width: 100%;
+    height: 320px;
+    background: linear-gradient(135deg, #2d1b46 0%, #160d24 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a5a1aa;
+    font-size: 1.1rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* ==========================================
+   Contact Footer Section
+   ========================================== */
+.contact-section {
+    padding: 100px 10% 80px 10%;
+    background-color: #0b0314;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Matches left-alignment in image_caaedb.jpg */
+    text-align: left;
+}
+
+.contact-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.contact-desc {
+    font-size: 1rem;
+    color: #a5a1aa;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contact-email {
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 4px;
+    transition: border-color 0.3s;
+}
+
+.contact-email:hover {
+    border-color: #a259ff;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+.social-links a {
+    transition: transform 0.2s;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
