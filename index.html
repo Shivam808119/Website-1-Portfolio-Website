@@ -1,183 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivam Portfolio</title>
+    <title> Shivam Portfolio Website </title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        
+    </style>
 </head>
+
 <body>
+
+
+    <!-- Nav Bar Starts  -->
 
     <nav>
         <div class="logo">
-            <span class="logo-icon">Ʃ</span> 
+            <span class="logo-icon"> Ʃ</span>
+
         </div>
+
+
         <ul class="nav-links">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+
     </nav>
 
-    <section class="hero">
+    <!-- Nav Bar Completed -->
+
+
+
+
+
+
+
+    <!-- Hero Section Starts Can Say First Page Starts  -->
+
+    <section class="hero" id="home">
         <div class="hero-content">
-            
-            <div class="intro-box">
-                <div class="avatar-container">
-                    <span class="avatar-emoji">🧑‍💻</span>
+
+            <div class="hero-left">
+
+                <p class="intro">Hello, I'm</p>
+
+                <h1 class="name">Shivam Pal</h1>
+
+                <h2 class="role">Turning Ideas into Code.</h2>
+
+                <p class="hero-description">
+                    I build responsive web applications and
+                    continuously learn modern technologies
+                    to create better digital experiences.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
                 </div>
-                
-                <div class="intro-text">
-                    <p class="greeting">Hello! I Am <span class="highlight">Shivam Pal</span></p>
-                    <p class="tagline">A Designer who</p>
-                    <h2 class="main-quote">Judges a book<br>by its <span class="circle-text">cover...</span></h2>
-                    <p class="sub-quote">Because if the cover does not impress you what else can?</p>
-                </div>
+
             </div>
 
-            <h1 class="job-title">I'm a Software Engineer.|</h1>
-            <p class="company">Currently, I'm a Software Engineer at <span class="fb-link">📘 Facebook</span>.</p>
+            <div class="hero-right">
 
-            <p class="description">
-                A self-taught UI/UX designer, functioning in the industry for 3+ years now. <br>
-                I make meaningful and delightful digital products that create an equilibrium <br>
-                between user needs and business goals.
-            </p>
-            
+                <div class="code-editor">
+
+                    <div class="editor-header">
+                        <div class="editor-header">
+
+                            <div class="window-buttons">
+
+                                <span class="red"></span>
+
+                                <span class="yellow"></span>
+
+                                <span class="green"></span>
+
+                            </div>
+
+                            <p class="file-name">
+
+                                profile.js
+
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="editor-body">
+                        <div class="code-line">
+                            <span class="line-number">1</span>
+                            <span class="keyword">const</span>
+                            <span class="variable">developer</span>
+                            =
+                            {
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">2</span>
+                            &nbsp;&nbsp;
+                            name:
+                            <span class="string">"Shivam"</span>,
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">3</span>
+                            &nbsp;&nbsp;
+                            role:
+                            <span class="string">"Full Stack"</span>,
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">4</span>
+                            &nbsp;&nbsp;
+                            learning:
+                            [
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">5</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="string">"React"</span>,
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">6</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="string">"Python"</span>,
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">7</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="string">"AI & ML"</span>
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">8</span>
+                            &nbsp;&nbsp;
+                            ]
+                        </div>
+
+                        <div class="code-line">
+                            <span class="line-number">9</span>
+                            }
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
     </section>
-    
 
-    <section class="experience-section">
-        <h2 class="section-title">Work Experience</h2>
-        
+    <!-- Hero Section Page Completed  -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Experice Page Starts  -->
+
+
+
+    <section class="experience-section" id="about">
+
+        <h2 class="section-title">
+            My Journey
+        </h2>
+
         <div class="experience-grid">
-            
+
+            <!-- Card 1  -->
             <div class="exp-card">
-                <div class="card-icon">🔮</div>
+                <div class="card-icon">
+                    🚀
+                </div>
                 <div class="card-info">
-                    <h3>CIB on the Mobile</h3>
-                    <p>Take your client onboard seamlessly by our amazing tool of digital onboard process.</p>
-                    <a href="#" class="learn-more-btn">LEARN MORE</a>
+                    <h3>Web Development</h3>
+                    <p>
+                        Learning HTML, CSS, JavaScript, and building responsive websites.
+                    </p>
+                    <a href="#" class="learn-more-btn">
+                        LEARN MORE
+                    </a>
                 </div>
             </div>
 
+            <!-- Card 2  -->
             <div class="exp-card">
-                <div class="card-icon">💡</div>
+                <div class="card-icon">
+                    <img src="icons/react-js-icon.svg">
+                </div>
                 <div class="card-info">
-                    <h3>CIB on the Mobile</h3>
-                    <p>Take your client onboard seamlessly by our amazing tool of digital onboard process.</p>
-                    <a href="#" class="learn-more-btn">LEARN MORE</a>
+                    <h3>React Development</h3>
+                    <p>
+                        Building reusable UI components and modern frontend applications.
+                    </p>
+                    <a href="#" class="learn-more-btn">
+                        LEARN MORE
+                    </a>
                 </div>
             </div>
 
+            <!-- Card 3  -->
             <div class="exp-card">
-                <div class="card-icon">☕</div>
+                <div class="card-icon">
+                    <img src="icons/python-programming-language-icon.svg" alt="Python">
+                </div>
                 <div class="card-info">
-                    <h3>CIB on the Mobile</h3>
-                    <p>Take your client onboard seamlessly by our amazing tool of digital onboard process.</p>
-                    <a href="#" class="learn-more-btn">LEARN MORE</a>
+                    <h3>Python Programming</h3>
+                    <p>
+                        Learning Python for backend development, automation, and problem solving.
+                    </p>
+                    <a href="#" class="learn-more-btn">
+                        LEARN MORE
+                    </a>
                 </div>
             </div>
 
+            <!-- Crad 4 -->
             <div class="exp-card">
-                <div class="card-icon">🧪</div>
+                <div class="card-icon">
+                    🤖
+                </div>
                 <div class="card-info">
-                    <h3>CIB on the Mobile</h3>
-                    <p>Take your client onboard seamlessly by our amazing tool of digital onboard process.</p>
-                    <a href="#" class="learn-more-btn">LEARN MORE</a>
+                    <h3>AI & Machine Learning</h3>
+                    <p>
+                        Exploring AI, Machine Learning, and preparing for future intelligent applications.
+                    </p>
+                    <a href="#" class="learn-more-btn">
+                        LEARN MORE
+                    </a>
                 </div>
             </div>
+
 
         </div>
     </section>
 
-    <section class="skills-section">
-        <h3 class="pitch-text">
-            I'm currently looking to join a <span class="purple-highlight">cross-functional</span> team <br>
-            <span>that values improving people's lives through accessible design</span>
-        </h3>
+    <!-- Expericence Section Completed  -->
 
-        <div class="tech-icons-container">
-            <div class="icon-row top-row">
-                <span class="tech-tag">🎨 Figma</span>
-                <span class="tech-tag">⚛️ React</span>
-                <span class="tech-tag">🟢 Node</span>
-                <span class="tech-tag">🟨 JS</span>
-                <span class="tech-tag">🟦 CSS</span>
-            </div>
-            <div class="icon-row bottom-row">
-                <span class="tech-tag">❌ Xd</span>
-                <span class="tech-tag">▲ Next</span>
-                <span class="tech-tag">🟣 G</span>
-                <span class="tech-tag">🧡 Ai</span>
-            </div>
-        </div>
 
-        <div class="footer-logo-glow">
-            <div class="glowing-circle">
-                <span class="central-logo">Ʃ</span>
-            </div>
-        </div>
-    </section>
 
-    <!-- Featured Projects Section -->
-    <section class="projects-section">
-        
-        <!-- Project 1: Text Left, Image Right -->
-        <div class="project-row">
-            <div class="project-text">
-                <span class="project-tag">Featured Project</span>
-                <h2 class="project-title">Example Project</h2>
-                <div class="project-desc-box">
-                    <p>A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>
-                </div>
-                <div class="project-icons">
-                    <span>🔗</span> <span>🐙</span>
-                </div>
-            </div>
-            <div class="project-image-container">
-                <!-- Replace emoji with an actual screenshot image later -->
-                <div class="project-screenshot">💻 Project Preview</div>
-            </div>
-        </div>
 
-        <!-- Project 2: Image Left, Text Right (Uses .reverse class) -->
-        <div class="project-row reverse">
-            <div class="project-text">
-                <span class="project-tag">Featured Project</span>
-                <h2 class="project-title">Example Project</h2>
-                <div class="project-desc-box">
-                    <p>A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>
-                </div>
-                <div class="project-icons">
-                    <span>🔗</span> <span>🐙</span>
-                </div>
-            </div>
-            <div class="project-image-container">
-                <div class="project-screenshot">💻 Project Preview</div>
-            </div>
-        </div>
 
-    </section>
 
-    <!-- Contact Section -->
-    <footer class="contact-section">
-        <h2 class="contact-title">Contact</h2>
-        <p class="contact-desc">
-            I'm currently looking to join a cross-functional team that values improving people's lives 
-            through accessible design. or have a project in mind? Let's connect.
+
+
+
+
+
+
+    <!-- /* skill Section Starts */ -->
+
+    <section class="skills-section" id="skills">
+
+        <p class="skills-subtitle">SKILLS</p>
+
+        <h2 class="skills-title">
+            Skills & <span>Technologies</span>
+        </h2>
+
+        <p class="skills-description">
+            Technologies I work with to bring ideas to life.
         </p>
-        <a href="mailto:shivam@example.com" class="contact-email">shivam@example.com</a>
-        
-        <!-- Social Icons Row -->
-        <div class="social-links">
-            <a href="#">📸</a>
-            <a href="#">🌐</a>
-            <a href="#">💻</a>
+
+        <div class="skills-container">
+
+            <!-- One Skill -->
+
+            <div class="skill">
+                <img src="icons/html-icon.svg" alt="HTML">
+                <p>HTML</p>
+            </div>
+
+            <div class="skill">
+                <img src="icons/css-icon.svg" alt="CSS">
+                <p>CSS</p>
+            </div>
+
+            <div class="skill">
+                <img src="icons/javascript-programming-language-icon.svg" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+
+            <div class="skill">
+                <img src="icons/react-js-icon.svg" alt="React">
+                <p>React</p>
+            </div>
+
+            <div class="skill">
+                <img src="icons/node-js-icon.svg" alt="Node">
+                <p>Node.js</p>
+            </div>
+
+            <div class="skill">
+                <img src="icons/python-programming-language-icon.svg" alt="Python">
+                <p>Python</p>
+            </div>
+
+            <div class="skill">
+                <img src="icons/git-icon.svg" alt="Git">
+                <p>Git</p>
+            </div>
+
+            <div class="skill">
+                <img src="icons/github-icon.svg" alt="GitHub">
+                <p>GitHub</p>
+            </div>
+
+            <div class="skill">
+                <img src="icons/visual-studio-code-icon.svg" alt="VS Code">
+                <p>VS Code</p>
+            </div>
+
         </div>
+
+    </section>
+
+    <!-- Skill Section Completeed  -->
+
+
+
+
+
+
+
+
+
+    <!-- Project Section Starts  -->
+
+
+    <section class="projects-section" id="projects">
+
+        <!-- Project 1 -->
+
+        <div class="project-row">
+
+            <div class="project-text">
+
+                <span class="project-tag">
+                    Featured Project
+                </span>
+
+                <h2 class="project-title">
+                    Personal Portfolio Website
+                </h2>
+
+                <div class="project-desc-box">
+
+                    <p>
+                        Designed and developed a modern, fully responsive personal portfolio website using HTML and CSS.
+                        The website showcases my skills, learning journey, and projects while focusing on clean UI,
+                        responsive layouts, and user-friendly design.
+                    </p>
+
+                </div>
+
+                <div class="project-links">
+
+                    <a href="https://your-demo.com" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        Live Demo
+                    </a>
+
+                    <a href="https://github.com/Shivam808119" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="project-image-container">
+
+                <div class="project-screenshot">
+
+                    <img src="images/portfolio-home.png" alt="Portfolio Website Screenshot" class="project-image">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Project 2 -->
+
+        <div class="project-row reverse">
+
+            <div class="project-text">
+
+                <span class="project-tag">
+                    Featured Project
+                </span>
+
+                <h2 class="project-title">
+                    More Projects Coming Soon...
+                </h2>
+
+                <div class="project-desc-box">
+
+                    <p>
+                        I'm currently learning JavaScript, React, Node.js, and Python. More exciting projects will be
+                        added here as I continue building and improving my skills.
+                    </p>
+
+                </div>
+
+                
+
+                    <div class="project-links">
+
+                        <a href="#">
+                            📅 Coming Soon
+                        </a>
+
+                        <a href="#contact">
+                            🚀 Contact Me
+                        </a>
+
+
+                </div>
+
+            </div>
+
+            <div class="project-image-container">
+
+                <div class="project-screenshot">
+
+                    <img src="images/pro_2.png" alt="Portfolio Website Screenshot" class="project-image">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Project Section Ends  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section Starts -->
+
+
+    <footer class="contact-section" id="contact">
+
+        <h2 class="contact-title">
+            Contact
+        </h2>
+
+        <p class="contact-desc">
+            I'm always excited to connect with fellow developers, recruiters, and people with interesting project ideas. Whether you have an opportunity, a collaboration, or just want to say hello, feel free to reach out!
+        </p>
+
+        <a href="mailto:shivam@example.com" class="contact-email">
+            shivampal80811966@gmail.com
+        </a>
+
+        <div class="social-links">
+
+    <a href="https://github.com/Shivam808119" target="_blank">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/shivam-pal-693467397/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a href="https://x.com/ShivamPal191567" target="_blank">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+
+</div>
+
     </footer>
+
+    <!-- Footer Section Completed -->
+
+
+
 </body>
+
+
 </html>
